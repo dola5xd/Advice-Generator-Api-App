@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice generator | FrontEnd mentor</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body
+    class="bg-DarkBlue flex flex-col items-center justify-center h-[100vh] w-[100vw]"
+  >
+    <div
+      id="container"
+      class="container bg-DarkGrayishBlue w-[75vw] rounded-lg opacity-0 transition-all duration-700 large:w-[50vw] shadow-custom"
+    >
+      <article
+        class="relative flex flex-col items-center justify-center text-center p-7"
+      >
+        <h6
+          class="text-NeonGreen uppercase text-[10px] my-[10px] tracking-[0.25em]"
+        >
+          advice <span id="adviceID" class="ml-[5px]"></span>
+        </h6>
+        <h1
+          id="quote"
+          class="text-Lightcyan text-[15px] font-extrabold my-[10px] medium:text-[18px]"
+        ></h1>
+        <span class="my-[25px] mb-[50px]">
+          <img src="./assets/images/pattern-divider-mobile.svg" alt="divider" />
+        </span>
+        <button
+          id="dice"
+          class="absolute bottom-[-9%] bg-NeonGreen rounded-full p-[20px] outline-0 border-0 transition-all duration-500"
+        >
+          <img
+            src="./assets/images/icon-dice.svg"
+            alt="dice"
+            class="transition-all duration-500"
+          />
+        </button>
+      </article>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
